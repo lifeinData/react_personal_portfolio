@@ -11,7 +11,7 @@ export default (
           <h3>Magna feugiat lorem</h3>
           <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
           <ul className="actions special">
-            <li><a href="#" className="button">More</a></li>
+            <li><a href="/" className="button">More</a></li>
           </ul>
         </div>
         <div className="col-4 col-12-medium">
@@ -19,7 +19,7 @@ export default (
           <h3>Magna feugiat lorem</h3>
           <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
           <ul className="actions special">
-            <li><a href="#" className="button">More</a></li>
+            <li><a href="/" className="button">More</a></li>
           </ul>
         </div>
         <div className="col-4 col-12-medium">
@@ -27,7 +27,7 @@ export default (
           <h3>Magna feugiat lorem</h3>
           <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
           <ul className="actions special">
-            <li><a href="#" className="button">More</a></li>
+            <li><a href="/" className="button">More</a></li>
           </ul>
         </div>
       </div>
