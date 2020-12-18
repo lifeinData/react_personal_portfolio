@@ -29,7 +29,7 @@ export default (
                 </div>
               </a>
             </li>
-            <li><a href="#" class="btn-header">3D Button</a></li>
+            <li><a href="#" class="btn-header">3D Buttonn</a></li>
             <li><a href="#" class="btn-header">3D Button</a></li>
           </ul>
         </div>
