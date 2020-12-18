@@ -2,6 +2,7 @@ import React from 'react';
 import sectionHeader from './sectionHeader';
 import sectionProject from './sectionProject';
 import sectionFooter from './sectionFooter';
+import sectionContact from './sectionContact';
 
 class App extends React.Component {
     state = { langauge: 'english' };
@@ -12,6 +13,7 @@ class App extends React.Component {
               {sectionHeader}
               {sectionProject}
               {sectionFooter}
+              {sectionContact}
             </div>
         );
     }

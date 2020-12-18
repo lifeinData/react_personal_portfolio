@@ -24,6 +24,8 @@
 		xxsmall:  ( null,    320px  )
 	));
 
+$linkedInBlue: #007bb5;
+
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
 
@@ -147,10 +149,6 @@
 
 	em, i {
 		font-style: italic;
-	}
-
-	p {
-		margin: 0 0 _size(element-margin) 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -687,7 +685,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 0 0;
 		padding-left: 1em;
 
 		li {
@@ -1027,6 +1025,10 @@
 		a {
 			border-bottom-color: transparentize(_palette(dark, fg), 0.25);
 
+			&#linkedin-part:hover {
+				color: $linkedInBlue;
+			}
+
 			&:hover {
 				color: _palette(dark, fg-bold);
 			}
@@ -1120,7 +1122,7 @@
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
 		@include dark(#4686a0);
 		background-attachment:	fixed,							fixed,							fixed;
-		background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
+		background-color: white;
 		background-position:	top left,						center center,					center center;
 		background-size:		auto,							cover,							cover;
 		overflow: hidden;
@@ -1129,10 +1131,6 @@
 
 		h1 {
 			margin: 0;
-		}
-
-		p {
-			margin: (_size(element-margin) * 0.5) 0 0 0;
 		}
 
 		.actions {
@@ -1543,4 +1541,8 @@
 				@include padding(2em, 1em, (0,0,_size(element-margin),0));
 			}
 
+	}
+
+	#hello {
+		border: 3px solid red
 	}
