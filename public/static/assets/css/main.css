@@ -2287,6 +2287,9 @@ button:disabled,
 .main.style2 a#linkedin-part:hover {
   color: #007bb5;
 }
+.main.style2 a#github-part:hover {
+  color: #8f01fbe8;
+}
 .main.style2 a:hover {
   color: #ffffff;
 }
@@ -2370,6 +2373,9 @@ button:disabled,
 }
 #header a#linkedin-part:hover {
   color: #007bb5;
+}
+#header a#github-part:hover {
+  color: #8f01fbe8;
 }
 #header a:hover {
   color: #ffffff;
@@ -2540,6 +2546,9 @@ body.is-preload #header:after {
 }
 #footer a#linkedin-part:hover {
   color: #007bb5;
+}
+#footer a#github-part:hover {
+  color: #8f01fbe8;
 }
 #footer a:hover {
   color: #ffffff;

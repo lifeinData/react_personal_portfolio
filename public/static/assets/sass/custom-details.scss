@@ -13,6 +13,7 @@ $blue: #1CD3F8;
 $angle: 8px;
 $angle-o: 4px;
 $linkedInBlue: #007bb5;
+$githubPurp: #8f01fbe8;
 
 #self-img {
   height: 350px;
@@ -34,6 +35,10 @@ ul.nav { text-align: center; }
       border: $linkedInBlue 1px solid;
     }
 
+    a#github-part {
+      border: $githubPurp 1px solid;
+    }
+
     &:not(:last-child) {
       margin: 0 0 40px 0;
     }
@@ -51,14 +56,21 @@ ul.nav { text-align: center; }
   color: $brown;
   font-family: arial;
   letter-spacing: 1px;
-
-
+  width: 160px;
+  height: 63px;
   text-decoration: none;
 
   &#linkedin-part{
     box-shadow: -6px 6px 0 $linkedInBlue;
     &:hover {
       box-shadow: -3px 3px 0 $linkedInBlue;
+    }
+  }
+
+  &#github-part{
+    box-shadow: -6px 6px 0 $githubPurp;
+    &:hover {
+      box-shadow: -3px 3px 0 $githubPurp;
     }
   }
 
@@ -83,6 +95,14 @@ ul.nav { text-align: center; }
     }
   }
 
+  &#linkedin-part::after {
+    background-color: $linkedInBlue;
+  }
+
+  &#github-part::after {
+    background-color: $githubPurp;
+  }
+
   &::after {
     transition: all .15s linear 0s;
     content: '';
@@ -91,10 +111,18 @@ ul.nav { text-align: center; }
     left: -4px;
     width: $angle;
     height: $angle;
-    background-color: $linkedInBlue;
+
     transform: rotate(45deg);
     z-index: -1;
 
+  }
+
+  &#linkedin-part::before {
+    background-color: $linkedInBlue;
+  }
+
+  &#github-part::before {
+    background-color: $githubPurp;
   }
 
   &::before {

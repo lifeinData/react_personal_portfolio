@@ -21,6 +21,9 @@ ul.nav {
 #header ul li a#linkedin-part {
   border: #007bb5 1px solid;
 }
+#header ul li a#github-part {
+  border: #8f01fbe8 1px solid;
+}
 #header ul li:not(:last-child) {
   margin: 0 0 40px 0;
 }
@@ -37,6 +40,8 @@ ul.nav {
   color: #404040;
   font-family: arial;
   letter-spacing: 1px;
+  width: 160px;
+  height: 63px;
   text-decoration: none;
 }
 .btn-header#linkedin-part {
@@ -44,6 +49,12 @@ ul.nav {
 }
 .btn-header#linkedin-part:hover {
   box-shadow: -3px 3px 0 #007bb5;
+}
+.btn-header#github-part {
+  box-shadow: -6px 6px 0 #8f01fbe8;
+}
+.btn-header#github-part:hover {
+  box-shadow: -3px 3px 0 #8f01fbe8;
 }
 .btn-header:hover {
   top: 3px;
@@ -62,6 +73,12 @@ ul.nav {
   width: 4px;
   height: 4px;
 }
+.btn-header#linkedin-part::after {
+  background-color: #007bb5;
+}
+.btn-header#github-part::after {
+  background-color: #8f01fbe8;
+}
 .btn-header::after {
   transition: all 0.15s linear 0s;
   content: "";
@@ -70,9 +87,14 @@ ul.nav {
   left: -4px;
   width: 8px;
   height: 8px;
-  background-color: #007bb5;
   transform: rotate(45deg);
   z-index: -1;
+}
+.btn-header#linkedin-part::before {
+  background-color: #007bb5;
+}
+.btn-header#github-part::before {
+  background-color: #8f01fbe8;
 }
 .btn-header::before {
   transition: all 0.15s linear 0s;
